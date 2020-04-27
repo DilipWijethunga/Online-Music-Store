@@ -47,7 +47,6 @@ body {
 
 .container{
 	padding: 50px;
-	background-color: #ff8000;
 	display: flex;
 	flex-wrap: wrap;
 	
