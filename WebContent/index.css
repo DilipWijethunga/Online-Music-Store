@@ -1,0 +1,62 @@
+@charset "ISO-8859-1";
+
+body {
+ background-image: url("images/background.jpg");
+ background-attachment: fixed;
+ background-size: cover;
+ margin: 0;
+}
+ 
+
+
+/*  Header */
+
+.header {
+  overflow: hidden;
+  background-color: #333;
+  
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+  padding: 100px;
+}
+
+/* button text properties of nav bar */
+.header a{
+	text-decoration: none;
+	padding: 50px 50px 50px 50px;
+	font-family: Impact, Charcoal, sans-serif;
+	color: #c0c0c0;
+}
+
+.navtab{
+	float: left;
+	color: #f2f2f2;
+  	text-align: center;
+ 	text-decoration: none;
+ 	font-size: 30px;
+}
+
+/*  End of Header */
+
+
+
+/* Songs with thumbnails */
+
+.container{
+	padding: 50px;
+	background-color: #ff8000;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.product{
+	padding: 10px;
+}
+
+
+
+/* end of Songs with thumbnails */
