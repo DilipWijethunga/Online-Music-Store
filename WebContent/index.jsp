@@ -53,7 +53,7 @@
 		<li><a href="#"> Disco </a></li>
 		<li><a href="#"> Techno </a></li>
 		<li><a href="#"> Dance music</a></li>
-		<li><a href="#"> Opera </li>
+		<li><a href="#"> Opera </a></li>
 	</ul>
 	
 	</div>
@@ -67,7 +67,6 @@
 	
 		<div class="container">
 		
-			<div class="title">New Releases</div>
 			<div class="img-container">
 				<div class="product" style="background-image:url(images/01.jpg)" >
 				</div>
