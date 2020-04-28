@@ -39,44 +39,46 @@
 
 	
 		<div class="container">
+		
+			<div class="title">New Releases</div>
 			<div class="img-container">
-				<div class="product">
-					<img src="images/01.jpg" alt="image"/>	
+				<div class="product" style="background-image:url(images/01.jpg)" >
+					
 				</div>
 			</div>
 			<div class="img-container">
-				<div class="product">
-					<img src="images/02.jpg" alt="image"/>	
+				<div class="product" style="background-image:url(images/02.jpg)" >
+					
 				</div>
 			</div>
 			<div class="img-container">
-				<div class="product">
-					<img src="images/03.jpg" alt="image"/>	
+				<div class="product" style="background-image:url(images/03.jpg)" >
+					
 				</div>
 			</div>
 			<div class="img-container">
-				<div class="product">
-					<img src="images/04.jpg" alt="image"/>	
+				<div class="product" style="background-image:url(images/04.jpg)" >
+					
 				</div>
 			</div>
 			<div class="img-container">
-				<div class="product">
-					<img src="images/05.jpg" alt="image"/>	
+				<div class="product" style="background-image:url(images/05.jpg)" >
+					
 				</div>
 			</div>
 			<div class="img-container">
-				<div class="product">
-					<img src="images/06.jpg" alt="image"/>	
+				<div class="product" style="background-image:url(images/06.jpg)" >
+					
 				</div>
 			</div>
 			<div class="img-container">
-				<div class="product">
-					<img src="images/07.jpg" alt="image"/>	
+				<div class="product" style="background-image:url(images/07.jpg)" >
+					
 				</div>
 			</div>
 			<div class="img-container">
-				<div class="product">
-					<img src="images/08.jpg" alt="image"/>	
+				<div class="product" style="background-image:url(images/08.jpg)" >
+					
 				</div>
 			</div>
 		
