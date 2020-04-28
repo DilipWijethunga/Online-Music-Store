@@ -20,10 +20,8 @@
 
 	<ul class="navtab">
 		<a href="#">HOME</a>
-		<a href="#">CATEGORIES</a>
 		<a href="#">CONTACT US</a>
 		<a href="#">ABOUT US</a>
-		<a href="#">CATEGORIES</a>
 	
 	</ul>
 
@@ -69,9 +67,9 @@
 
 	
 		<div class="container">
-		
+			<h1>New Releases</h1>
 			<div class="img-container">
-				<div class="product" style="background-image:url(images/01.jpg)" >
+				<div class="product" style="background-image:url(images/01.jpg)">
 				</div>
 			</div>
 			<div class="img-container">

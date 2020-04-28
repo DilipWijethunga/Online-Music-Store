@@ -25,7 +25,8 @@ body {
 /* button text properties of nav bar */
 .header a{
 	text-decoration: none;
-	padding: 20px 20px 20px 20px;
+	padding-left:20px;
+	padding-right:20px;
 	font-family: Impact, Charcoal, sans-serif;
 	color: #c0c0c0;
 }
@@ -37,10 +38,12 @@ body {
   	text-align: center;
  	text-decoration: none;
  	font-size: 25px;
- 	padding: 0px 0px 0px 100px;
+ 	padding: 0px 0px 0px 150px;
 }
 
 /*  End of Header */
+
+
 
 
 .section1{
@@ -50,11 +53,12 @@ body {
 /* Categories */
 
 .categories{
-	width: 600px;
+	width: 500px;
+	height: 70%;
 	background-color: white;
 	display: flex;
-	margin: 10px;
-	
+	margin: 40px;
+	margin-top: 70px;
 }
 
 .categories ul li a{
@@ -75,6 +79,15 @@ body {
 /* Songs with thumbnails */
 
 .container{
+	padding-top: 0px;
+}
+
+.container h1{
+	text-align: center;
+	background-color: #0080ff;
+	width: 80%;
+	margin-left: 70px;
+	margin-top: 70px;
 	
 }
 
@@ -86,7 +99,6 @@ body {
 	flex-wrap: wrap;
 	padding: 70px;
 	display: inline-block;
-	
 }
 
 .product image{
@@ -97,9 +109,9 @@ body {
 
 .product{
 	height: 200px;
-  width: 200px;
-  background-size: cover;
-  background-position: center;
+  	width: 200px;
+  	background-size: cover;
+ 	background-position: center;
   
 }
 
