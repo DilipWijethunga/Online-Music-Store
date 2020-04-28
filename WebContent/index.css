@@ -43,11 +43,14 @@ body {
 /*  End of Header */
 
 
+.section1{
+	display: flex;
+}
 
 /* Categories */
 
 .categories{
-	width: 200px;
+	width: 600px;
 	background-color: white;
 	display: flex;
 	margin: 10px;

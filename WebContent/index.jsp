@@ -32,6 +32,11 @@
 
 </head>
 
+
+<body>
+
+
+<div class="section1">
 <!-- Categories -->
 
 	<div class="categories">
@@ -59,8 +64,6 @@
 	</div>
 
 <!-- End of Categories -->
-
-<body>
 
 <!-- Songs with thumbnail -->
 
@@ -108,7 +111,7 @@
 			</div>
 		
 		</div>
-
+</div>
 
 	
 </body>
