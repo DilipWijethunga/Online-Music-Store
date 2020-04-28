@@ -46,14 +46,22 @@ body {
 /* Songs with thumbnails */
 
 .container{
-	padding: 50px;
-	display: flex;
-	flex-wrap: wrap;
 	
 }
 
-.product{
-	padding: 10px;
+.img-container{
+	width: 100px;
+	height: 100px;
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 70px;
+}
+
+.product image{
+	width: 200px;
+	height: 200px;
+	object-fit: contain:
 }
 
 

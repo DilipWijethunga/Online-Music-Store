@@ -39,29 +39,45 @@
 
 	
 		<div class="container">
-			<div class="product">
-				<img src="images/01.jpg" alt="image"/>	
+			<div class="img-container">
+				<div class="product">
+					<img src="images/01.jpg" alt="image"/>	
+				</div>
 			</div>
-			<div class="product">
-				<img src="images/02.jpg" alt="image"/>	
+			<div class="img-container">
+				<div class="product">
+					<img src="images/02.jpg" alt="image"/>	
+				</div>
 			</div>
-			<div class="product">
-				<img src="images/03.jpg" alt="image"/>	
+			<div class="img-container">
+				<div class="product">
+					<img src="images/03.jpg" alt="image"/>	
+				</div>
 			</div>
-			<div class="product">
-				<img src="images/04.jpg" alt="image"/>	
+			<div class="img-container">
+				<div class="product">
+					<img src="images/04.jpg" alt="image"/>	
+				</div>
 			</div>
-			<div class="product">
-				<img src="images/05.jpg" alt="image"/>	
+			<div class="img-container">
+				<div class="product">
+					<img src="images/05.jpg" alt="image"/>	
+				</div>
 			</div>
-			<div class="product">
-				<img src="images/06.jpg" alt="image"/>	
+			<div class="img-container">
+				<div class="product">
+					<img src="images/06.jpg" alt="image"/>	
+				</div>
 			</div>
-			<div class="product">
-				<img src="images/07.jpg" alt="image"/>	
+			<div class="img-container">
+				<div class="product">
+					<img src="images/07.jpg" alt="image"/>	
+				</div>
 			</div>
-			<div class="product">
-				<img src="images/08.jpg" alt="image"/>	
+			<div class="img-container">
+				<div class="product">
+					<img src="images/08.jpg" alt="image"/>	
+				</div>
 			</div>
 		
 		</div>
