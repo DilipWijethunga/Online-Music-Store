@@ -23,6 +23,7 @@
 		<a href="#">CATEGORIES</a>
 		<a href="#">CONTACT US</a>
 		<a href="#">ABOUT US</a>
+		<a href="#">CATEGORIES</a>
 	
 	</ul>
 
@@ -31,7 +32,33 @@
 
 </head>
 
+<!-- Categories -->
 
+	<div class="categories">
+		<ul >
+		<li><a href="#"> Jazz </a></li>
+		<li><a href="#"> Hip hop music </a></li>
+		<li><a href="#"> Rock </a></li>
+		<li><a href="#"> Pop music </a></li>
+		<li><a href="#"> Blues </a></li>
+		<li><a href="#"> Musical theatre </a></li>
+		<li><a href="#"> Folk music </a></li>
+		<li><a href="#"> Classical music </a></li>
+		<li><a href="#"> Country music </a></li>
+		<li><a href="#"> Heavy metal </a></li>
+		<li><a href="#"> Rhythm and blues </a></li>
+		<li><a href="#"> Reggae </a></li>
+		<li><a href="#"> Funk </a></li>
+		<li><a href="#"> Soul music </a></li>
+		<li><a href="#"> Disco </a></li>
+		<li><a href="#"> Techno </a></li>
+		<li><a href="#"> Dance music</a></li>
+		<li><a href="#"> Opera </li>
+	</ul>
+	
+	</div>
+
+<!-- End of Categories -->
 
 <body>
 
@@ -43,7 +70,6 @@
 			<div class="title">New Releases</div>
 			<div class="img-container">
 				<div class="product" style="background-image:url(images/01.jpg)" >
-					
 				</div>
 			</div>
 			<div class="img-container">
@@ -83,6 +109,7 @@
 			</div>
 		
 		</div>
+
 
 	
 </body>
