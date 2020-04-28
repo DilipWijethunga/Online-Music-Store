@@ -109,8 +109,53 @@
 			</div>
 		
 		</div>
+		
 </div>
 
+
+<div class="container2">
+			<h1>New Releases</h1>
+			<div class="img-container">
+				<div class="product" style="background-image:url(images/01.jpg)">
+				</div>
+			</div>
+			<div class="img-container">
+				<div class="product" style="background-image:url(images/02.jpg)" >
+					
+				</div>
+			</div>
+			<div class="img-container">
+				<div class="product" style="background-image:url(images/03.jpg)" >
+					
+				</div>
+			</div>
+			<div class="img-container">
+				<div class="product" style="background-image:url(images/04.jpg)" >
+					
+				</div>
+			</div>
+			<div class="img-container">
+				<div class="product" style="background-image:url(images/05.jpg)" >
+					
+				</div>
+			</div>
+			<div class="img-container">
+				<div class="product" style="background-image:url(images/06.jpg)" >
+					
+				</div>
+			</div>
+			<div class="img-container">
+				<div class="product" style="background-image:url(images/07.jpg)" >
+					
+				</div>
+			</div>
+			<div class="img-container">
+				<div class="product" style="background-image:url(images/08.jpg)" >
+					
+				</div>
+			</div>
+		
+		</div>
 	
 </body>
 

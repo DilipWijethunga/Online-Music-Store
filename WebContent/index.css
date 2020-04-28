@@ -80,14 +80,16 @@ body {
 
 .container{
 	padding-top: 0px;
+	border: 2px solid black;
 }
 
 .container h1{
+	position: absolute;;
 	text-align: center;
 	background-color: #0080ff;
-	width: 80%;
+	width: 61%;
 	margin-left: 70px;
-	margin-top: 70px;
+	margin-top: 20px;
 	
 }
 
@@ -112,7 +114,7 @@ body {
   	width: 200px;
   	background-size: cover;
  	background-position: center;
-  
+	
 }
 
 
