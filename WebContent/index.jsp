@@ -8,7 +8,7 @@
 <head>
 <meta charset="ISO-8859-1">
 
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="css/index.css">
 
 
 <title>Online Music</title>
