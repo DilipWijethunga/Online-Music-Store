@@ -1,4 +1,4 @@
-package index;
+package com.oop.index;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
