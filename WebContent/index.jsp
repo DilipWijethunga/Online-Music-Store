@@ -22,6 +22,7 @@
 		<a href="#">HOME</a>
 		<a href="#">CONTACT US</a>
 		<a href="#">ABOUT US</a>
+		<a href="#">USER</a>
 	
 	</ul>
 
