@@ -18,7 +18,7 @@
 	<form method="POST" action="AddSongsServlet">
 
 	  <div class="container">
-	    <h1>Add Songs</h1>
+	    <p class = "topic" >Add Songs</p>
 	    <hr>
 	
 	    <label class = "labels"><b>Song Name   </b></label>	    

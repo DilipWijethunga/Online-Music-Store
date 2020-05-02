@@ -38,15 +38,25 @@
 
          <label class = "labels"><b>Address    </b></label>
 		 <input type="text" class="inputs"  name="customerAddress" value="<%=customer.getCustomerAddress()%>" /></td>
+			
 		
 		
-		<label class = "labels"><b>Gender    </b></label>
-		<input type="radio" class="radio1" name="gender" value="male" checked="checked" tabindex="1" /> 
-		<label class = "choice1">Male</label> 
-		<br>	
-		<input type="radio" class="radio" name="gender" value="female" tabindex="2" /> 
-		<label class = "choice2">Female</label> 
+		
+		<label class = "labels"><b>Gender</b></label>
+		
+		<label class = "label">Male
+			<input type="radio" name="gender" value="male" checked="checked"  tabindex="1" /> 
+			<span class="checkmark"></span>
+			</label> 
+			
+			<label class = "label">Female
+			<input type="radio" name="gender" value="female" tabindex="2" /> 
+			<span class="checkmark"></span>
+			</label>
+			<br>
+
 		<br><br>
+		
 		
 		<label class = "labels"><b>Email    </b></label>
 		<input type="text" class="inputs"  name="customerEmail" value="<%=customer.getCustomerEmail()%>" /></td>
