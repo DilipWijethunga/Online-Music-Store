@@ -11,25 +11,36 @@ body {
   box-sizing: border-box;
 }
 
+
 /* Add padding to containers */
 .container {
+  background-image: linear-gradient(to bottom left, #00b6ff, #090979, #020024 );  background-size: cover;
   padding: 16px;
-  background-color: white;
-  width: 1100px; 
-  height: 900px; 
+  width: 950px; 
+  height: 1000px; 
   margin: 10% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
 }
 
+.topic {
+	margin-top: 40px;
+	font-size: 35px;
+	font-weight: bolder;
+	margin-left: 35px;
+}
+
+
 label {
-	width: 100px;
+	font-size: 18px;
+	width: 120px;
 	display: inline-block;
 	margin-left: 50px;
 }
 
 /* Full-width input fields */
 .inputs {
-  width: 800px;
+  font-size: 16px;
+  width: 600px;
   padding: 15px;
   margin-top: 5px;
   margin-right: 0px;
@@ -56,9 +67,53 @@ label {
 }
 
 .radio {
-	margin-left: 200px;
+	margin-left: 218px;
 	display: inline-block;
 }
+
+
+
+/* Hide the browser's default radio button */
+.label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.9em;
+  width: 0.9em;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.label:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.label input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Style the indicator (dot/circle) */
+.label .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+
+
+
 
 input[type=text]:focus {
   background-color: #ddd;
@@ -74,10 +129,12 @@ hr {
 /* Set a style for the submit button */
 .btn {
   background-color: #0000e6;
+  font-weight: bolder;
+  font-size: 15px;
   color: white;
   padding: 16px 20px;
   margin: 8px 0;
-  margin-left: 350px;
+  margin-left: 290px;
   border: none;
   cursor: pointer;
   width: 350px;
