@@ -27,10 +27,7 @@
 		<a href="#">CONTACT US</a>
 		<a href="#">ABOUT US</a>
 		<a href="#">USER</a>
-		<div class="search-box">
-			<input type="text" placeholder="Search-txt" class="search"></input>
-			<a class="search-btn" href="#"></a>
-		</div>
+		
 	</ul>
 	</div>
     
