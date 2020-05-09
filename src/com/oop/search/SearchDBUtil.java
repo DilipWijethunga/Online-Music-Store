@@ -39,8 +39,8 @@ public class SearchDBUtil {
 				String album = res.getString(4);
 				String artist = res.getString(5);
 				
-				Songs song = new Songs(songid, title, price, album, artist);
-				song.add(song);
+				Songs song1 = new Songs(songid, title, price, album, artist);
+				song1.add(song1);
 			}
 		}
 		
