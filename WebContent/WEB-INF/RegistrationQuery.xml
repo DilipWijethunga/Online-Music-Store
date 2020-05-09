@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Querys>
+
+	<!-- Create table customer Query -->
+	<query id="create_employee_table">
+        <![CDATA[
+            CREATE TABLE registration(
+				customerID varchar(10) not null,
+				customerName varchar(50),
+				customerPhone varchar(10),
+				customerAddress varchar(50),
+				gender varchar(10) DEFAULT 'Male',
+				customerEmail varchar(50),
+				UserName  varchar(50),
+				password varchar(20),			
+				primary key (customerID)
+			)
+        ]]>
+	</query>
+
+	<!-- DROP TABLE EMPLOYEES Query -->
+	<query id="drop_table">
+         <![CDATA[        
+            DROP TABLE IF EXISTS registration 
+        ]]>
+	</query>
+
+	<!-- Select all customer orders Query -->
+	<query id="insert_employee">
+        <![CDATA[
+          	insert into registration (customerID, customerName, customerPhone, customerAddress, gender, customerEmail, UserName, password) 
+          	values (?, ?, ?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<!-- Select a particular customer by id Query -->
+	<query id="employee_by_id">
+         <![CDATA[        
+            select * from registration where registration.customerID = ?
+        ]]>
+	</query>
+
+	<!-- Select all employees -->
+	<query id="all_employees">
+         <![CDATA[        
+            select * from registration
+        ]]>
+	</query>
+
+	<!-- Delete a particular customer by id Query -->
+	<query id="remove_employee">
+         <![CDATA[        
+            delete from registration where registration.customerID = ?
+        ]]>
+	</query>
+	
+	<!-- Update a particular customer by id Query -->
+	<query id="update_employee">
+         <![CDATA[        
+            update registration as e 
+            set e.customerName = ?, e.customerPhone = ?, e.customerAddress = ?, e.gender = ?, e.customerEmail = ?, e.UserName = ?, e.password = ? 
+            where e.customerID = ?
+        ]]>
+	</query>
+	
+		<!-- Get customer IDs Query -->
+	<query id="employee_ids">
+         <![CDATA[        
+            select e.customerID from registration as e
+        ]]>
+	</query>
+
+</Querys>
