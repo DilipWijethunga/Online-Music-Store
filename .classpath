@@ -17,5 +17,6 @@
 	<classpathentry kind="lib" path="F:/SLIIT/Year 02/Information Technology/IT2030 - Object Oriented Programming/08. JSP &amp; Servlets/Online-Music-Store/WebContent/WEB-INF/lib/javax.servlet.jsp.jstl-1.2.1.jar"/>
 	<classpathentry kind="lib" path="F:/SLIIT/Year 02/Information Technology/IT2030 - Object Oriented Programming/08. JSP &amp; Servlets/Online-Music-Store/WebContent/WEB-INF/lib/jtds-1.3.1.jar"/>
 	<classpathentry kind="lib" path="F:/SLIIT/Year 02/Information Technology/IT2030 - Object Oriented Programming/08. JSP &amp; Servlets/Online-Music-Store/WebContent/WEB-INF/lib/mysql-connector-java-8.0.19.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
