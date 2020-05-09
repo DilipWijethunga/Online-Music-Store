@@ -10,6 +10,19 @@ body {
     overflow: hidden;
     background-color: #333;
     padding-top: 10px;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Nav bar text properties */
+.navtab {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    align-items: center;
 }
 
 .header .navtab a:hover {
@@ -38,7 +51,7 @@ body {
 
 .avatar {
     width: 50px;
-    margin-left: 10px;
+   
 }
 
 /* button text properties of nav bar */
@@ -50,15 +63,7 @@ body {
     color: #c0c0c0;
 }
 
-/* Nav bar text properties */
-.navtab {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    text-decoration: none;
-    font-size: 25px;
-    padding: 0px 0px 0px 150px;
-}
+
 
 .search {
     border-radius: 50px;

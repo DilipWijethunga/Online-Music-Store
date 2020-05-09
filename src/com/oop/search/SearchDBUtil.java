@@ -22,7 +22,7 @@ public class SearchDBUtil {
 		String password = "1234";
 		
 		
-		//validate part
+		//validating
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			

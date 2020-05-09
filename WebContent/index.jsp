@@ -39,11 +39,14 @@
                         <a href="#">ADMIN</a>
                     </ul>
                     <div class="search-box">
+                    
                     	<form action="search" method="post">
-                        <input type="text" placeholder="Search..." class="search" name="srchtext"></input>
-                        <input type="image" class="search-btn" src="images/search.svg" name="searchbtn" value="searchbt">
-                        <input type="image" class="avatar" src="images/avatar.svg">
+                        	<input type="text" placeholder="Search..." class="search" name="srchtext"></input>
+                        	<input type="image" class="search-btn" src="images/search.svg" name="searchbtn" value="searchbt">
+                        	<input type="image" class="avatar" src="images/avatar.svg">
                         </form>
+                        
+                        
                         
                     </div>
                     <div class="user-profile">

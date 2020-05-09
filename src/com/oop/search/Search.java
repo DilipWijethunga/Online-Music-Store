@@ -17,11 +17,11 @@ public class Search extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		String search = request.getParameter(srchtext);
+		String search = request.getParameter("srchtext");
 
 		try {
 				List<Songs> searchPage = SearchDBUtil.search(search);
-				request.setAttribute("search", searchPage);
+				request.setAttribute("searchResult", searchPage);
 		}
 
 		catch(Exception e) {
