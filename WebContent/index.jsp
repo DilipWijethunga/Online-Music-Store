@@ -36,6 +36,7 @@
                         <a href="#">CONTACT US</a>
                         <a href="#">ABOUT US</a>
                         <a href="#">USER</a>
+                        <a href="#">ADMIN</a>
                     </ul>
                     <div class="search-box">
                     	<form action="search" method="post">
