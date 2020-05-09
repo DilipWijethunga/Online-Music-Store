@@ -32,7 +32,7 @@
             <div class="col-12">
                 <div class="header">
                     <ul class="navtab">
-                        <a href="#">HOME</a>
+                        <a href="index.jsp">HOME</a>
                         <a href="#">CONTACT US</a>
                         <a href="#">ABOUT US</a>
                         <a href="#">USER</a>

@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/search.css">
 
     <title>Online Music</title>
 
@@ -34,7 +34,7 @@
             <div class="col-12">
                 <div class="header">
                     <ul class="navtab">
-                        <a href="#">HOME</a>
+                        <a href="index.jsp">HOME</a>
                         <a href="#">CONTACT US</a>
                         <a href="#">ABOUT US</a>
                         <a href="#">USER</a>
@@ -91,28 +91,32 @@
                 
                 
                 <c:forEach var="search" items="${searchResult}">
-                <h1 class="title">Search results for "${search.title}"</h1>
-				<table>
-				<tr>
-					<td>songid</td>
-					<td>title</td>
-					<td>price</td>
-					<td>album</td>
-					<td>artist</td>
-				</tr>
-				
-				<tr>
-					<td>${search.songid}</td>
-					<td>${search.title}</td>
-					<td>${search.price}</td>
-					<td>${search.album}</td>
-					<td>${search.artist}</td>
-				</tr>
-				
-				</table>
-				
-				
-				</c:forEach>
+                    <h1 class="title">Search results for "${search.title}"</h1>
+
+                    <table class="searchtable">
+                        <thead>
+                            <tr>
+                                <th>Song ID</th>
+                                <th>Song Title</th>
+                                <th>Price</th>
+                                <th>Album</th>
+                                <th>Artist</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>${search.songid}</td>
+                                <td>${search.title}</td>
+                                <td>$${search.price}</td>
+                                <td>${search.album}</td>
+                                <td>${search.artist}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </c:forEach>
 
             </div>
         </div>
