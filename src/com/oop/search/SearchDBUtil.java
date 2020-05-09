@@ -1,5 +1,6 @@
-package com.search;
+package com.oop.search;
 import java.sql.Connection;
+
 
 
 import java.sql.DriverManager;
@@ -8,7 +9,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String;
 
 public class SearchDBUtil {
 	
@@ -40,7 +40,7 @@ public class SearchDBUtil {
 				String artist = res.getString(5);
 				
 				Songs song1 = new Songs(songid, title, price, album, artist);
-				song1.add(song1);
+				song.add(song1);
 			}
 		}
 		

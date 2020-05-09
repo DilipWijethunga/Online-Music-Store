@@ -1,6 +1,5 @@
-package com.search;
+package com.oop.search;
 
-import com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String;
 
 public class Songs {
 	private int songid;
@@ -11,7 +10,6 @@ public class Songs {
 	
 	
 	public Songs(int songid, String title, double price, String album, String artist) {
-		super();
 		this.songid = songid;
 		this.title = title;
 		this.price = price;

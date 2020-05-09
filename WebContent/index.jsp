@@ -82,7 +82,7 @@
                 </div>
             </div>
             <div class="col-10">
-                <h1 class="title">Artists</h1>
+                <h1 class="title">Songs</h1>
                 <div class="images">
 
                     <div class="img-container">
@@ -157,51 +157,51 @@
                         <div class="thumbnail">
                             <p class="img-button">
                             <img src="images/01.jpg" alt="">
-                            <span><input type="button" name="buy" class="buynow" value="Buy now"></span>
+                            <span><input type="button" name="buy" class="buynow" value="Details"></span>
                             </p>
                             <p class="img-button">
                             <img src="images/02.jpg" alt="">
-                            <span><input type="button" name="buy" class="buynow" value="Buy now"></span>
+                            <span><input type="button" name="buy" class="buynow" value="Details"></span>
                             </p>
                             <p class="img-button">
                             <img src="images/03.jpg" alt="">
-                            <span><input type="button" name="buy" class="buynow" value="Buy now"></span>
+                            <span><input type="button" name="buy" class="buynow" value="Details"></span>
                             </p>
                             <p class="img-button">
                             <img src="images/04.jpg" alt="">
-                            <span><input type="button" name="buy" class="buynow" value="Buy now"></span>
+                            <span><input type="button" name="buy" class="buynow" value="Details"></span>
                             </p>
                             <p class="img-button">
                             <img src="images/05.jpg" alt="">
-                            <span><input type="button" name="buy" class="buynow" value="Buy now"></span>
+                            <span><input type="button" name="buy" class="buynow" value="Details"></span>
                             </p>
                             <p class="img-button">
                             <img src="images/06.jpg" alt="">
-                            <span><input type="button" name="buy" class="buynow" value="Buy now"></span>
+                            <span><input type="button" name="buy" class="buynow" value="Details"></span>
                             </p>
                             <p class="img-button">
                             <img src="images/07.jpg" alt="">
-                            <span><input type="button" name="buy" class="buynow" value="Buy now"></span>
+                            <span><input type="button" name="buy" class="buynow" value="Details"></span>
                             </p>
                             <p class="img-button">
                             <img src="images/08.jpg" alt="">
-                            <span><input type="button" name="buy" class="buynow" value="Buy now"></span>
+                            <span><input type="button" name="buy" class="buynow" value="Details"></span>
                             </p>
                             <p class="img-button">
                             <img src="images/01.jpg" alt="">
-                            <span><input type="button" name="buy" class="buynow" value="Buy now"></span>
+                            <span><input type="button" name="buy" class="buynow" value="Details"></span>
                             </p>
                             <p class="img-button">
                             <img src="images/02.jpg" alt="">
-                            <span><input type="button" name="buy" class="buynow" value="Buy now"></span>
+                            <span><input type="button" name="buy" class="buynow" value="Details"></span>
                             </p>
                             <p class="img-button">
                             <img src="images/03.jpg" alt="">
-                            <span><input type="button" name="buy" class="buynow" value="Buy now"></span>
+                            <span><input type="button" name="buy" class="buynow" value="Details"></span>
                             </p>
                             <p class="img-button">
                             <img src="images/04.jpg" alt="">
-                            <span><input type="button" name="buy" class="buynow" value="Buy now"></span>
+                            <span><input type="button" name="buy" class="buynow" value="Details"></span>
                             </p>
                         </div>
 
