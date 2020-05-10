@@ -1,4 +1,4 @@
-package com.oop.search;
+package com.oop.util;
 import java.sql.Connection;
 
 
@@ -8,6 +8,8 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.oop.model.Songs;
 
 
 public class SearchDBUtil {

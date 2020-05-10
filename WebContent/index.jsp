@@ -88,7 +88,7 @@
             <div class="col-10">
                 <h1 class="title">Songs</h1>
                 <div class="images">
-
+					<form action="#" method="post">
                     <div class="img-container">
                         <div class="thumbnail">
                             <p class="img-button">
@@ -142,6 +142,8 @@
                         </div>
 
                     </div>
+                   </form>
+                    
                 </div>
 
             </div>

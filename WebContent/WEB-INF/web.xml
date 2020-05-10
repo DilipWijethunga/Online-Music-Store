@@ -9,7 +9,7 @@
 
 	<servlet>
 		<servlet-name>search</servlet-name>
-		<servlet-class>com.oop.search.Search</servlet-class>
+		<servlet-class>com.oop.servlet.Search</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
