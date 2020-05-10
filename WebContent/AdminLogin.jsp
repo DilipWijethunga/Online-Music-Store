@@ -8,25 +8,17 @@
 <link href="css/AdminLogin.css" rel="stylesheet" type="text/css" media="all" />
 <script src="js/AdminLogin.js" type="text/javascript"> </script>
 <title>Admin Login Page</title>
+
+				
 </head>
 
 <body>
-	<!--......................test................-->
-	<!-- -------------------------------------------------------------- -->
-	<!-- -------------------------------------------------------------- -->
-	<!-- -------------------------------------------------------------- -->
-	<!-- -------------------------------------------------------------- -->	
-	<!-- -------------------------------------------------------------- -->
-	<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-	<!-- -------------------------------------------------------------- -->
-	<!-- -------------------------------------------------------------- -->
-	<!-- -------------------------------------------------------------- -->
-	<!-- -------------------------------------------------------------- -->
-	<!-- -------------------------------------------------------------- -->
 
+	<button onclick="document.getElementById('id01').style.display='block'" class="login" >Login</button>
+	
 	<div id="id01" class="modal">
   
-	  	<form class="modal-content animate" action="/action_page.php" method="post">
+	  	<form class="modal-content animate" action="LoginCheck.jsp" method="post">
 	    
 		    <div class="imgcontainer">
 		      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -36,21 +28,26 @@
 		    <div class="container">
 		     
 		      <label for="uname"><b>Username</b></label>
-		      <input type="text" placeholder="Enter Username" name="uname" required>
+		      <input type="text" id="username" placeholder="Enter Username" name="username" required>
 		
 		      <label for="psw"><b>Password</b></label>
-		      <input type="password" placeholder="Enter Password" name="psw" required>
-		        
-		      <button type="submit">Login</button>
+		      <input type="password" id="password" placeholder="Enter Password" name="password" required>
+		      
+		      <input type="checkbox" onclick="myFunction()">Show Password
+		      
+		      <button id="validation" >Login</button>
 		
 		    </div>
 		
 		    <div class="container" style="background-color:#f1f1f1">
-		      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+		    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
 		    </div>
 	    
 	  </form>
 	</div>
+	
+	
+	
 
 </body>
 </html>
