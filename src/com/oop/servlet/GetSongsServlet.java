@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.oop.model.Songs;
+import com.oop.model.AddSongs;
 import com.oop.service.SongServiceImpl;
 import com.oop.service.ISongService;
 
@@ -52,7 +52,7 @@ public class GetSongsServlet extends HttpServlet {
 
  		String songID = request.getParameter("songID");			
  		ISongService iSongService = new SongServiceImpl();
-		Songs songs = iSongService.getSongByID(songID);
+ 		AddSongs songs = iSongService.getSongByID(songID);
 
 		request.setAttribute("songs", songs);
 		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/WEB-INF/views/GetSongs.jsp");

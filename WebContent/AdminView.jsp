@@ -17,16 +17,19 @@
 
 <body>
 
-	<a class = "btn1" href="AddSongs.jsp">Administrator Login</a>
-	<br><br>
+	<br><br><br><br><br>
+	<a class = "btn" href="AddSongs.jsp">Administrator Login</a>
+	
     <a class = "btn" href="RegistrationHomeView.jsp">Register Customers</a>
-    <br>
-	<a class = "btn" href="ListCustomers.jsp">List All Registered Customers</a>
-	<br>
+    
+	<a class = "btn" href="F:/SLIIT/Year 02/Information Technology/IT2030 - Object Oriented Programming/08. JSP & Servlets/Online-Music-Store/WebContent/WEB-INF/views/ListCustomers.jsp">List All Registered Customers</a>
+
 	<a class = "btn" href="AddSongs.jsp">Add Songs</a>
-	<br>
+	
 	<a class = "btn" href="WEB-INF/views/ListSongs.jsp">List All Songs</a>
-	<br>
+	
+    <a class = "btn" href="AdminLogout.jsp">Logout</a>
+    
 
 	<ul class="slideshow">
 		<li><span></span></li>
@@ -36,9 +39,13 @@
 		<li><span></span></li>
 	</ul>
 
-		
-
-
 </body>
+
+<!-- 	
+    	String a = session.getAttribute("username").toString();
+        out.println("Hello  " + a);
+    %>
+     -->
 </html>
+
 

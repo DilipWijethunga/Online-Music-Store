@@ -15,7 +15,7 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
-import com.oop.model.Songs;
+import com.oop.model.AddSongs;
 import com.oop.util.SongsCommonConstants;
 import com.oop.util.SongsCommonUtil;
 import com.oop.util.SongsDBConnectionUtil;
@@ -95,7 +95,7 @@ public class SongServiceImpl implements ISongService {
 	 * 
 	 */
 	@Override
-	public void addSongs(Songs songs) {
+	public void addSongs(AddSongs songs) {
 
 		String songID = SongsCommonUtil.generateIDs(getSongIDs());
 		
@@ -152,7 +152,7 @@ public class SongServiceImpl implements ISongService {
 	 * @see #actionOnSongs()
 	 */
 	@Override
-	public Songs getSongByID(String songID) {
+	public AddSongs getSongByID(String songID) {
 
 		return actionOnSongs(songID).get(0);
 	}
@@ -166,7 +166,7 @@ public class SongServiceImpl implements ISongService {
 	 * @see #actionOnSongs()
 	 */
 	@Override
-	public ArrayList<Songs> getSongs() {
+	public ArrayList<AddSongs> getSongs() {
 		
 		return actionOnSongs(null);
 	}
@@ -233,7 +233,7 @@ public class SongServiceImpl implements ISongService {
 	 * @param songID
 	 *            ID of the song to remove or select from the list
 
-	 * @return ArrayList<Songs> Array of song list will be return
+	 * @return ArrayList<AddSongs> Array of song list will be return
 	 * 
 	 * @throws SQLException
 	 *             - Thrown when database access error occurs or this method is
@@ -253,9 +253,9 @@ public class SongServiceImpl implements ISongService {
 	 * @see #getSongss()
 	 * @see #getSongByID(String)
 	 */
-	private ArrayList<Songs> actionOnSongs(String songID) {
+	private ArrayList<AddSongs> actionOnSongs(String songID) {
 
-		ArrayList<Songs> songList = new ArrayList<Songs>();
+		ArrayList<AddSongs> songList = new ArrayList<AddSongs>();
 		try {
 			connection = SongsDBConnectionUtil.getDBConnection();
 			/*
@@ -282,7 +282,7 @@ public class SongServiceImpl implements ISongService {
 			ResultSet resultSet = preparedStatement.executeQuery();
 
 			while (resultSet.next()) {
-				Songs songs = new Songs();
+				AddSongs songs = new AddSongs();
 				songs.setSongID(resultSet.getString(SongsCommonConstants.COLUMN_INDEX_ONE));
 				songs.setSongName(resultSet.getString(SongsCommonConstants.COLUMN_INDEX_TWO));
 				songs.setArtist(resultSet.getString(SongsCommonConstants.COLUMN_INDEX_THREE));
@@ -325,7 +325,7 @@ public class SongServiceImpl implements ISongService {
 	 * 
 	 */
 	@Override
-	public Songs updateSongs(String songID, Songs songs) {
+	public AddSongs updateSongs(String songID, AddSongs songs) {
 
 		/*
 		 * Before fetching song it checks whether song ID is available
