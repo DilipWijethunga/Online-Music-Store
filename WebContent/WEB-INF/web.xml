@@ -1,20 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
-         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
-         version="3.1">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
 
-
-	<servlet>
+  <display-name>Online Music Store Web App</display-name>
+ 
+ 	<servlet>
 		<servlet-name>search</servlet-name>
 		<servlet-class>com.oop.servlet.Search</servlet-class>
 	</servlet>
-
-	<servlet-mapping>
+	
+	
+  <servlet>
+    <servlet-name>AddCustomerServlet</servlet-name>
+    <servlet-class>com.oop.servlet.AddCustomerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateCustomerServlet</servlet-name>
+    <servlet-class>com.oop.servlet.UpdateCustomerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteCustomerServlet</servlet-name>
+    <servlet-class>com.oop.servlet.DeleteCustomerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetCustomerServlet</servlet-name>
+    <servlet-class>com.oop.servlet.GetCustomerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListCustomerServlet</servlet-name>
+    <servlet-class>com.oop.servlet.ListCustomerServlet</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>AddCustomerServlet</servlet-name>
+    <url-pattern>/AddCustomerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateCustomerServlet</servlet-name>
+    <url-pattern>/UpdateCustomerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteCustomerServlet</servlet-name>
+    <url-pattern>/DeleteCustomerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetCustomerServlet</servlet-name>
+    <url-pattern>/GetCustomerServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ListCustomerServlet</servlet-name>
+    <url-pattern>/ListCustomerServlet</url-pattern>
+  </servlet-mapping>
+ 
+ 	<servlet-mapping>
 		<servlet-name>search</servlet-name>
 		<url-pattern>/search</url-pattern>
 	</servlet-mapping>
+ 
+ 
+ 
+ <servlet>
+    <servlet-name>AddSongsServlet</servlet-name>
+    <servlet-class>com.oop.servlet.AddSongsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateSongsServlet</servlet-name>
+    <servlet-class>com.oop.servlet.UpdateSongsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteSongsServlet</servlet-name>
+    <servlet-class>com.oop.servlet.DeleteSongsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetSongsServlet</servlet-name>
+    <servlet-class>com.oop.servlet.GetSongsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListSongsServlet</servlet-name>
+    <servlet-class>com.oop.servlet.ListSongsServlet</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>AddSongsServlet</servlet-name>
+    <url-pattern>/AddSongsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateSongsServlet</servlet-name>
+    <url-pattern>/UpdateSongsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteSongsServlet</servlet-name>
+    <url-pattern>/DeleteSongsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetSongsServlet</servlet-name>
+    <url-pattern>/GetSongsServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ListSongsServlet</servlet-name>
+    <url-pattern>/ListSongsServlet</url-pattern>
+  </servlet-mapping>
+ 
+  <welcome-file-list>
+    <welcome-file>homeView.html</welcome-file>
+    <welcome-file>homeView.htm</welcome-file>
+    <welcome-file>RegistrationHomeView.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>Registrationindex.jsp</welcome-file>
+  </welcome-file-list>
 
 </web-app>
