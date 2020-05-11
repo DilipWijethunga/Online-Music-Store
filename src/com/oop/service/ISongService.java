@@ -1,6 +1,6 @@
 package com.oop.service;
 
-import com.oop.model.AddSongs;
+import com.oop.model.Songs;
 
 import java.util.ArrayList;
 import java.util.logging.Level;
@@ -22,7 +22,7 @@ public interface ISongService {
 	 * Add songs for song table
 	 * @param songs
 	 */
-	public void addSongs(AddSongs songs);
+	public void addSongs(Songs songs);
 
 	/**
 	 * Get a particular Song
@@ -30,14 +30,14 @@ public interface ISongService {
 	 * @param songID
 	 * @return Song
 	 */
-	public AddSongs getSongByID(String songID);
+	public Songs getSongByID(String songID);
 	
 	/**
 	 * Get all list of songs
 	 * 
 	 * @return ArrayList<Songs>
 	 */
-	public ArrayList<AddSongs> getSongs();
+	public ArrayList<Songs> getSongs();
 	
 	/**
 	 * Update existing song
@@ -46,7 +46,7 @@ public interface ISongService {
 	 * 
 	 * @return
 	 */
-	public AddSongs updateSongs(String songID, AddSongs song);
+	public Songs updateSongs(String songID, Songs song);
 
 	/**
 	 * Remove existing song

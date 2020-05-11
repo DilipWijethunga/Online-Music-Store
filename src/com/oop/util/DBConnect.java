@@ -1,7 +1,6 @@
 package com.oop.util;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 
 public class DBConnect {
 
@@ -14,15 +13,11 @@ public class DBConnect {
 			public static Connection getConnection() {
 				
 				try {
-					Class.forName("com.mysql.jdbc.Driver");
-					con = DriverManager.getConnection(url, user, password);
+					
 				}
 				
-				catch (Exception e){
-					System.out.println("Check your database Connection!");
+				catch{
+					
 				}
-				
-				
-				return con;
 			}
 }

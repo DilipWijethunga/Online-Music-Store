@@ -1,4 +1,4 @@
-<%@page import="com.oop.model.AddSongs"%>
+<%@page import="com.oop.model.Songs"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="com.oop.service.SongServiceImpl"%>
 <%@page import="com.oop.service.ISongService"%>
@@ -36,9 +36,9 @@
             </tr>
             <%
             ISongService iSongService = new SongServiceImpl();
-			ArrayList<AddSongs> arrayList = iSongService.getSongs();
+			ArrayList<Songs> arrayList = iSongService.getSongs();
 			
-			for(AddSongs songs : arrayList){
+			for(Songs songs : arrayList){
 			%>
 			 <tr>
 				<td> <%=songs.getSongID() %> </td>

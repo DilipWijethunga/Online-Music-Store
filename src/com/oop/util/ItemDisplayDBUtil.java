@@ -1,5 +1,5 @@
 package com.oop.util;
-import com.oop.util.DBConnect;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,9 +12,6 @@ public class ItemDisplayDBUtil {
 		ArrayList<Songs> songDetails = new ArrayList<>();
 		
 		try {
-			
-			con = DBConnect.getConnection();
-			stmt = con.createStatement();
 			
 		}
 		

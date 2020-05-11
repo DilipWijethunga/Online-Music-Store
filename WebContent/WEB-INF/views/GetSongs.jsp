@@ -1,4 +1,4 @@
-<%@page import="com.oop.model.AddSongs"%>
+<%@page import="com.oop.model.Songs"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 	
 <!DOCTYPE html>
@@ -17,7 +17,7 @@
 
 	<jsp:include page="/WEB-INF/views/RegistrationHeader.jsp"></jsp:include>
 
-	<% AddSongs songs = (AddSongs) request.getAttribute("songs"); %>
+	<% Songs songs = (Songs) request.getAttribute("songs"); %>
 
 	<form method="POST" action="UpdateSongsServlet">
 	

@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.oop.model.AddSongs;
+import com.oop.model.Songs;
 import com.oop.service.SongServiceImpl;
 import com.oop.service.ISongService;
 
@@ -48,7 +48,7 @@ public class UpdateSongsServlet extends HttpServlet {
 
 		response.setContentType("text/html");
 
-		AddSongs songs = new AddSongs();
+		Songs songs = new Songs();
 		String songID = request.getParameter("songID");	
 		songs.setSongID(songID);
 		songs.setSongName(request.getParameter("songName"));
