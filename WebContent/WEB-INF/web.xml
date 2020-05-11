@@ -27,7 +27,7 @@
 
 	<servlet-mapping>
 		<servlet-name>DisplaySongs</servlet-name>
-		<url-pattern>/display</url-pattern>
+		<url-pattern>/displaysongs</url-pattern>
 	</servlet-mapping>
 	
 </web-app>

@@ -39,15 +39,15 @@
                         <a href="#">ADMIN</a>
                     </ul>
                     <div class="search-box">
-
-                        <form action="search" method="post">
-                            <input type="text" placeholder="Search..." class="search" name="srchtext"></input>
-                            <input type="image" class="search-btn" src="images/search.svg" name="searchbtn" value="searchbt">
-                            <input type="image" class="avatar" src="images/avatar.svg">
+                    
+                    	<form action="search" method="post">
+                        	<input type="text" placeholder="Search..." class="search" name="srchtext"></input>
+                        	<input type="image" class="search-btn" src="images/search.svg" name="searchbtn" value="searchbt">
+                        	<input type="image" class="avatar" src="images/avatar.svg">
                         </form>
-
-
-
+                        
+                        
+                        
                     </div>
                     <div class="user-profile">
 
@@ -88,65 +88,64 @@
             <div class="col-10">
                 <h1 class="title">Songs</h1>
                 <div class="images">
-
-                    <form action="displaysongs" method="post">
-
-                        <div class="img-container">
-                            <div class="thumbnail">
-                                <p class="img-button">
-                                    <input type="image" src="images/01.jpg" class="prodimg" id="1" >
-                                    <span><input type="submit" name="buy" class="show" value="Show Details"></span>
-                                </p>
-                                <p class="img-button">
-                                    <input type="image" src="images/02.jpg" class="prodimg" id="2">
-                                    <span><input type="button" name="buy" class="show" value="Show Details"></span>
-                                </p>
-                                <p class="img-button">
-                                    <input type="image" src="images/01.jpg" class="prodimg" id="3">
-                                    <span><input type="button" name="buy" class="show" value="Show Details"></span>
-                                </p>
-                                <p class="img-button">
-                                    <input type="image" src="images/02.jpg" class="prodimg" id="4">
-                                    <span><input type="button" name="buy" class="show" value="Show Details"></span>
-                                </p>
-                                <p class="img-button">
-                                    <input type="image" src="images/01.jpg" class="prodimg" id="5">
-                                    <span><input type="button" name="buy" class="show" value="Show Details"></span>
-                                </p>
-                                <p class="img-button">
-                                    <input type="image" src="images/02.jpg" class="prodimg" id="6">
-                                    <span><input type="button" name="buy" class="show" value="Show Details"></span>
-                                </p>
-                                <p class="img-button">
-                                    <input type="image" src="images/01.jpg" class="prodimg" id="7">
-                                    <span><input type="button" name="buy" class="show" value="Show Details"></span>
-                                </p>
-                                <p class="img-button">
-                                    <input type="image" src="images/02.jpg" class="prodimg" id="8">
-                                    <span><input type="button" name="buy" class="show" value="Show Details"></span>
-                                </p>
-                                <p class="img-button">
-                                    <input type="image" src="images/01.jpg" class="prodimg" id="9">
-                                    <span><input type="button" name="buy" class="show" value="Show Details"></span>
-                                </p>
-                                <p class="img-button">
-                                    <input type="image" src="images/02.jpg" class="prodimg" id="10">
-                                    <span><input type="button" name="buy" class="show" value="Show Details"></span>
-                                </p>
-                                <p class="img-button">
-                                    <input type="image" src="images/01.jpg" class="prodimg" id="11">
-                                    <span><input type="button" name="buy" class="show" value="Show Details"></span>
-                                </p>
-                                <p class="img-button">
-                                    <input type="image" src="images/02.jpg" class="prodimg" id="12">
-                                    <span><input type="button" name="buy" class="show" value="Show Details"></span>
-                                </p>
-
-                            </div>
-
+                
+			<form action="displaysongs" method="post">
+                    <div class="img-container">
+                        <div class="thumbnail">
+                            <p class="img-button">
+                                <input type="image" src="images/01.jpg" class="prodimg" id="1">
+                                <span><input type="submit" name="buy" class="show" value="Show Details" ></span> 
+                            </p>
+                            <p class="img-button">
+                                <input type="image" src="images/02.jpg" class="prodimg" id="2">
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
+                            </p>
+                            <p class="img-button">
+                                <input type="image" src="images/01.jpg" class="prodimg" id="3">
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
+                            </p>
+                            <p class="img-button">
+                                <input type="image" src="images/02.jpg" class="prodimg" id="4">
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
+                            </p>
+                            <p class="img-button">
+                                <input type="image" src="images/01.jpg" class="prodimg" id="5">
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
+                            </p>
+                            <p class="img-button">
+                                <input type="image" src="images/02.jpg" class="prodimg" id="6">
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
+                            </p>
+                            <p class="img-button">
+                                <input type="image" src="images/01.jpg" class="prodimg" id="7">
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
+                            </p>
+                            <p class="img-button">
+                                <input type="image" src="images/02.jpg" class="prodimg" id="8">
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
+                            </p>
+                            <p class="img-button">
+                                <input type="image" src="images/01.jpg" class="prodimg" id="9">
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
+                            </p>
+                            <p class="img-button">
+                                <input type="image" src="images/02.jpg" class="prodimg" id="10">
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
+                            </p>
+                            <p class="img-button">
+                                <input type="image" src="images/01.jpg" class="prodimg" id="11">
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
+                            </p>
+                            <p class="img-button">
+                                <input type="image" src="images/02.jpg" class="prodimg" id="12">
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
+                            </p>
+                            
                         </div>
-                    </form>
 
+                    </div>
+                   </form>
+                    
                 </div>
 
             </div>
@@ -166,53 +165,53 @@
                         <div class="thumbnail">
                             <p class="img-button">
                                 <input type="image" src="images/01.jpg" class="prodimg" id="1">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span>
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
                             </p>
                             <p class="img-button">
                                 <input type="image" src="images/02.jpg" class="prodimg" id="1">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span>
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
                             </p>
                             <p class="img-button">
                                 <input type="image" src="images/01.jpg" class="prodimg" id="1">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span>
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
                             </p>
                             <p class="img-button">
                                 <input type="image" src="images/02.jpg" class="prodimg" id="1">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span>
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
                             </p>
                             <p class="img-button">
                                 <input type="image" src="images/01.jpg" class="prodimg" id="1">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span>
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
                             </p>
                             <p class="img-button">
                                 <input type="image" src="images/02.jpg" class="prodimg" id="1">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span>
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
                             </p>
                             <p class="img-button">
                                 <input type="image" src="images/01.jpg" class="prodimg" id="1">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span>
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
                             </p>
                             <p class="img-button">
                                 <input type="image" src="images/02.jpg" class="prodimg" id="1">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span>
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
                             </p>
                             <p class="img-button">
                                 <input type="image" src="images/01.jpg" class="prodimg" id="1">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span>
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
                             </p>
                             <p class="img-button">
                                 <input type="image" src="images/02.jpg" class="prodimg" id="1">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span>
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
                             </p>
                             <p class="img-button">
                                 <input type="image" src="images/01.jpg" class="prodimg" id="1">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span>
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
                             </p>
                             <p class="img-button">
                                 <input type="image" src="images/02.jpg" class="prodimg" id="1">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span>
+                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
                             </p>
-
+                            
                         </div>
 
                     </div>
