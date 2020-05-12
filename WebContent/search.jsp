@@ -42,13 +42,23 @@
                     </ul>
                     <div class="search-box">
                     
+                    	<table>
+                    	<tr>
                     	<form action="search" method="post">
-                        	<input type="text" placeholder="Search..." class="search" name="srchtext"></input>
-                        	<input type="image" class="search-btn" src="images/search.svg" name="searchbtn" value="searchbt">
-                        	<input type="image" class="avatar" src="images/avatar.svg">
-                        </form>
-                        
-                        
+                    	<td><input type="text" placeholder="Search..." class="search" name="srchtext"></input></td>
+                    	<td><input type="image" class="search-btn" src="images/search.svg" name="searchbtn" value="searchbt"></td>
+                    	</form>
+                    	
+                    	<form action="#" method="post">
+                    	<td><input type="image" class="avatar" src="images/cart.svg"></td>
+                    	</form>
+                    	
+                    	<form action="#" method="post">
+                    	<td><input type="image" class="avatar" src="images/avatar.svg"></td>
+                    	</form>
+                    	</tr>
+                    
+                    </table>
                         
                     </div>
                     <div class="user-profile">

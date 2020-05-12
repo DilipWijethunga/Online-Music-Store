@@ -40,11 +40,30 @@
                     </ul>
                     <div class="search-box">
                     
+                    
+                    <table>
+                    	<tr>
                     	<form action="search" method="post">
-                        	<input type="text" placeholder="Search..." class="search" name="srchtext"></input>
-                        	<input type="image" class="search-btn" src="images/search.svg" name="searchbtn" value="searchbt">
-                        	<input type="image" class="avatar" src="images/avatar.svg">
-                        </form>
+                    	<td><input type="text" placeholder="Search..." class="search" name="srchtext"></input></td>
+                    	<td><input type="image" class="search-btn" src="images/search.svg" name="searchbtn" value="searchbt"></td>
+                    	</form>
+                    	
+                    	<form action="#" method="post">
+                    	<td><input type="image" class="avatar" src="images/cart.svg"></td>
+                    	</form>
+                    	
+                    	<form action="#" method="post">
+                    	<td><input type="image" class="avatar" src="images/avatar.svg"></td>
+                    	</form>
+                    	</tr>
+                    
+                    </table>
+                    	
+                        	
+                        	
+                        	
+                        	
+                        
                         
                         
                         
@@ -104,46 +123,60 @@
                                 <span><input type="submit" name="buy" class="show" value="Show Details" ></span> 
                             </form>
                             
-                            <p class="img-button">
-                                <input type="image" src="images/01.jpg" class="prodimg" id="3">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
-                            </p>
-                            <p class="img-button">
-                                <input type="image" src="images/02.jpg" class="prodimg" id="4">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
-                            </p>
-                            <p class="img-button">
-                                <input type="image" src="images/01.jpg" class="prodimg" id="5">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
-                            </p>
-                            <p class="img-button">
-                                <input type="image" src="images/02.jpg" class="prodimg" id="6">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
-                            </p>
-                            <p class="img-button">
-                                <input type="image" src="images/01.jpg" class="prodimg" id="7">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
-                            </p>
-                            <p class="img-button">
-                                <input type="image" src="images/02.jpg" class="prodimg" id="8">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
-                            </p>
-                            <p class="img-button">
-                                <input type="image" src="images/01.jpg" class="prodimg" id="9">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
-                            </p>
-                            <p class="img-button">
-                                <input type="image" src="images/02.jpg" class="prodimg" id="10">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
-                            </p>
-                            <p class="img-button">
-                                <input type="image" src="images/01.jpg" class="prodimg" id="11">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
-                            </p>
-                            <p class="img-button">
-                                <input type="image" src="images/02.jpg" class="prodimg" id="12">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
-                            </p>
+                            <form action="displaysongs" method="post" class="img-button">
+                                <input type="image" src="images/01.jpg" class="prodimg" id="1">
+                                <input type="hidden" name="id" value="3" />
+                                <span><input type="submit" name="buy" class="show" value="Show Details" ></span> 
+                            </form>
+                            <form action="displaysongs" method="post" class="img-button">
+                                <input type="image" src="images/01.jpg" class="prodimg">
+                                <input type="hidden" name="id" value="4" />
+                                <span><input type="submit" name="buy" class="show" value="Show Details" ></span> 
+                            </form>
+                            <form action="displaysongs" method="post" class="img-button">
+                                <input type="image" src="images/01.jpg" class="prodimg" id="1">
+                                <input type="hidden" name="id" value="5" />
+                                <span><input type="submit" name="buy" class="show" value="Show Details" ></span> 
+                            </form>
+                            
+                            <form action="displaysongs" method="post" class="img-button">
+                                <input type="image" src="images/01.jpg" class="prodimg">
+                                <input type="hidden" name="id" value="6" />
+                                <span><input type="submit" name="buy" class="show" value="Show Details" ></span> 
+                            </form>
+                            
+                            <form action="displaysongs" method="post" class="img-button">
+                                <input type="image" src="images/01.jpg" class="prodimg" id="1">
+                                <input type="hidden" name="id" value="7" />
+                                <span><input type="submit" name="buy" class="show" value="Show Details" ></span> 
+                            </form>
+                            <form action="displaysongs" method="post" class="img-button">
+                                <input type="image" src="images/01.jpg" class="prodimg">
+                                <input type="hidden" name="id" value="8" />
+                                <span><input type="submit" name="buy" class="show" value="Show Details" ></span> 
+                            </form>
+                            <form action="displaysongs" method="post" class="img-button">
+                                <input type="image" src="images/01.jpg" class="prodimg" id="1">
+                                <input type="hidden" name="id" value="9" />
+                                <span><input type="submit" name="buy" class="show" value="Show Details" ></span> 
+                            </form>
+                            
+                            <form action="displaysongs" method="post" class="img-button">
+                                <input type="image" src="images/01.jpg" class="prodimg">
+                                <input type="hidden" name="id" value="10" />
+                                <span><input type="submit" name="buy" class="show" value="Show Details" ></span> 
+                            </form>
+                            
+                            <form action="displaysongs" method="post" class="img-button">
+                                <input type="image" src="images/01.jpg" class="prodimg" id="1">
+                                <input type="hidden" name="id" value="11" />
+                                <span><input type="submit" name="buy" class="show" value="Show Details" ></span> 
+                            </form>
+                            <form action="displaysongs" method="post" class="img-button">
+                                <input type="image" src="images/01.jpg" class="prodimg">
+                                <input type="hidden" name="id" value="12" />
+                                <span><input type="submit" name="buy" class="show" value="Show Details" ></span> 
+                            </form>
                             
                         </div>
 
