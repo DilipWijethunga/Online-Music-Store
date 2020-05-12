@@ -89,17 +89,21 @@
                 <h1 class="title">Songs</h1>
                 <div class="images">
                 
-			<form action="displaysongs" method="post">
+			
                     <div class="img-container">
                         <div class="thumbnail">
-                            <p class="img-button">
+                            <form action="displaysongs" method="post" class="img-button">
                                 <input type="image" src="images/01.jpg" class="prodimg" id="1">
+                                <input type="hidden" name="id" value="1" />
                                 <span><input type="submit" name="buy" class="show" value="Show Details" ></span> 
-                            </p>
-                            <p class="img-button">
-                                <input type="image" src="images/02.jpg" class="prodimg" id="2">
-                                <span><input type="button" name="buy" class="show" value="Show Details"></span> 
-                            </p>
+                            </form>
+                            
+                            <form action="displaysongs" method="post" class="img-button">
+                                <input type="image" src="images/01.jpg" class="prodimg">
+                                <input type="hidden" name="id" value="2" />
+                                <span><input type="submit" name="buy" class="show" value="Show Details" ></span> 
+                            </form>
+                            
                             <p class="img-button">
                                 <input type="image" src="images/01.jpg" class="prodimg" id="3">
                                 <span><input type="button" name="buy" class="show" value="Show Details"></span> 
@@ -144,7 +148,7 @@
                         </div>
 
                     </div>
-                   </form>
+                   
                     
                 </div>
 
