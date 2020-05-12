@@ -21,6 +21,17 @@
 
 
 	<servlet>
+		<servlet-name>InsertCart</servlet-name>
+		<servlet-class>com.oop.servlet.InsertCartServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>InsertCart</servlet-name>
+		<url-pattern>/insertcart</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
 		<servlet-name>DisplaySongs</servlet-name>
 		<servlet-class>com.oop.servlet.DisplaySongsServlet</servlet-class>
 	</servlet>
@@ -29,5 +40,6 @@
 		<servlet-name>DisplaySongs</servlet-name>
 		<url-pattern>/displaysongs</url-pattern>
 	</servlet-mapping>
+	
 	
 </web-app>
