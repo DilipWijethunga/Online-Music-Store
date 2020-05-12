@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/songDetails.css">
 
     <title>Online Music</title>
 
@@ -99,7 +99,7 @@
                 <c:forEach var="song" items="${songDetails}">
                     <h1 class="title">Cart</h1>
 
-                    <table class="searchtable">
+                    <table class="songdetails">
                         <thead>
                             <tr>
                                 <th>Song ID</th>
@@ -107,18 +107,23 @@
                                 <th>Price</th>
                                 <th>Album</th>
                                 <th>Artist</th>
+                                <th>Quantity</th>
                                 <th></th>
                             </tr>
                         </thead>
 
                         <tbody>
+                        
                             <tr>
-                                <td><input type="text" value="${song.songid}"></td>
-                                <td>${song.title}</td>
-                                <td>$${song.price}</td>
-                                <td>${song.album}</td>
-                                <td>${song.artist}</td>
+                            <form >
+                                <td class="sdetails"><input type="text" value="${song.songid}" READONLY size="1"></td>
+                                <td class="sdetails"><input type="text" value="${song.title}" READONLY size="10"></td>
+                                <td class="sdetails"><input type="text" value="$${song.price}" READONLY size="1"></td>
+                                <td class="sdetails"><input type="text" value="${song.album}" READONLY size="10"></td>
+                                <td class="sdetails"><input type="text" value="${song.artist}" READONLY size="15"></td>
+                                <td><input type="text" value="" size="2"></td>
                                 <td><input type="button" value="Add to cart"></input></td>
+                                </form>
                             </tr>
                         </tbody>
                     </table>
