@@ -3,6 +3,10 @@ package com.oop.util;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.oop.model.Cart;
 
 public class CartDBUtil {
 
@@ -23,9 +27,11 @@ public class CartDBUtil {
 			Connection con = DriverManager.getConnection(url, user, password);
 			Statement stmt = con.createStatement();
 			
+			//insert data into cart table from product page
 			String sql = "insert into oop.cart values (0, '"+songid+"', '"+title+"', '"+price+"', '"+album+"', '"+artist+"', '"+quantity+"')";
 			int res = stmt.executeUpdate(sql);
 			
+			//checking data insertion is success or not
 			if(res > 0) {
 				isSuccess = true;
 			}
@@ -40,4 +46,38 @@ public class CartDBUtil {
 		
 		return isSuccess;
 	}
+	
+	//get data from cart
+	public static List<Cart> getCartDetails(String id){
+		
+		ArrayList<Cart> cart = new ArrayList<>();
+		
+		//Database connection
+				String url = "jdbc:mysql://localhost:3306/oop";
+				String user = "root";
+				String password = "1234";
+				
+			try {
+					Class.forName("com.mysql.jdbc.Driver");
+					
+					Connection con = DriverManager.getConnection(url, user, password);
+					Statement stmt = con.createStatement();
+					
+					//
+					String sql = "select * from cart where cartid = ('"+id+"')";
+					int res = stmt.executeUpdate(sql);
+			}
+			
+			
+			
+			catch(Exception e) {
+				e.printStackTrace();
+			}
+		
+		return cart;
+	}
+	
+	
+	
+	
 }
