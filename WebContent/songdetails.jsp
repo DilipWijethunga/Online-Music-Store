@@ -127,12 +127,13 @@
                         
                             <tr>
                             <form action="insertcart" method="post">
-                                <td class="sdetails"><input type="text" value="${song.songid}" READONLY size="1" name=""></td>
+                            
+                                <td class="sdetails"><input type="text" value="${song.songid}" READONLY size="1" name="songid"></td>
                                 <td class="sdetails"><input type="text" value="${song.title}" READONLY size="10" name="title"></td>
                                 <td class="sdetails"><input type="text" value="${song.price}" READONLY size="1" name="price"></td>
                                 <td class="sdetails"><input type="text" value="${song.album}" READONLY size="10" name="album"></td>
                                 <td class="sdetails"><input type="text" value="${song.artist}" READONLY size="15" name="artist"></td>
-                                <td><input type="text" value="" size="2" name="quantity"></td>
+                                <td><input type="text" value="1" size="2" name="quantity"></td>
                                 <td><input type="submit" value="Add to cart" name="addtocart"></input></td>
                                 </form>
                             </tr>

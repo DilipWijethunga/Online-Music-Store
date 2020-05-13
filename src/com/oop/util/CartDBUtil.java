@@ -6,7 +6,7 @@ import java.sql.Statement;
 
 public class CartDBUtil {
 
-	public static boolean Insertcart(String title, String price, String album, String artist, String quantity) {
+	public static boolean Insertcart(String songid, String title, String price, String album, String artist, String quantity) {
 		
 		
 		
@@ -23,7 +23,7 @@ public class CartDBUtil {
 			Connection con = DriverManager.getConnection(url, user, password);
 			Statement stmt = con.createStatement();
 			
-			String sql = "insert into oop.cart values (0, '"+title+"', '"+price+"', '"+album+"', '"+artist+"', quantity)";
+			String sql = "insert into oop.cart values (0, '"+songid+"', '"+title+"', '"+price+"', '"+album+"', '"+artist+"', '"+quantity+"')";
 			int res = stmt.executeUpdate(sql);
 			
 			if(res > 0) {

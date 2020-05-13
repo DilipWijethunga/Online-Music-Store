@@ -20,6 +20,7 @@ public class InsertCartServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		
+		String songid = request.getParameter("songid");
 		String title = request.getParameter("title");
 		String price = request.getParameter("price");
 		String album = request.getParameter("album");
@@ -29,7 +30,7 @@ public class InsertCartServlet extends HttpServlet {
 		
 		
 		boolean isTrue;
-		isTrue = CartDBUtil.Insertcart( title, price, album, artist, quantity);
+		isTrue = CartDBUtil.Insertcart(songid, title, price, album, artist, quantity);
 			
 		if(isTrue == true) {
 			RequestDispatcher dis = request.getRequestDispatcher("index.jsp");
