@@ -140,7 +140,7 @@ public class CartDAOImpl implements CartDAO {
 			boolean flag = false;
 			
 			try {
-				String sql = "update oop.cart set name='"+c.getQuantity()+"' where itemid="+c.getItemid();
+				String sql = "update oop.cart set quantity='"+c.getQuantity()+"' where itemid="+c.getItemid();
 				connection = DBConnect.getConnection();
 				preparedStatement = connection.prepareStatement(sql);
 				preparedStatement.executeUpdate();

@@ -33,9 +33,9 @@
 				<td>${cart.artist}</td>
 				<td>${cart.quantity}</td>
 				<td>${cart.price}</td>
-				<td><a href="${pageContex.request.contexPath}/CartControllerServlet?action=EDIT&itemid=${cart.itemid}">Edit</a>
+				<td><a href="${pageContext.request.contextPath}/CartControllerServlet?action=EDIT&itemid=${cart.itemid}">Edit</a>
 				|
-				<a href="${pageContex.request.contexPath}/CartControllerServlet?action=DELETE&itemid=${cart.itemid}">Delete</a></td>
+				<a href="${pageContext.request.contextPath}/CartControllerServlet?action=DELETE&itemid=${cart.itemid}">Delete</a></td>
 			</tr>
 		</c:forEach>
 	
