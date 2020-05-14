@@ -149,8 +149,12 @@ public class CartControllerServlet extends HttpServlet {
 	//delete items
 	private void deleteItem(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String id = request.getParameter("itemid");
-		System.out.print("sadsadadas" + id);
 		
+		if(cartDAO.delete(Integer.parseInt(id))) {
+			request.setAttribute("message", "Record has been Deleted!");
+		}
+		
+		cartList(request, response);
 	}
 		
 		

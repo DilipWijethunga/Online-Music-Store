@@ -154,5 +154,29 @@ public class CartDAOImpl implements CartDAO {
 			return flag;
 	}
 
+
+
+
+
+	@Override
+	public boolean delete(int itemid) {
+		
+		boolean flag = false;
+		
+		try {
+			String sql = "delete from oop.cart where itemid ="+itemid;
+			connection = DBConnect.getConnection();
+			preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.executeUpdate();
+			flag = true;
+		}
+		
+		
+		catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return flag;
+	}
+
 	
 }
