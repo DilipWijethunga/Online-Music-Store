@@ -112,7 +112,7 @@ public class CartDAOImpl implements CartDAO {
 		boolean flag = false;
 		
 		try {
-			String sql = "insert into oop.cart (songid, title, album, artist, price) values ('"+c.getSongid()+"', '"+c.getTitle()+"', '"+c.getAlbum()+"', '"+c.getArtist()+"', '"+c.getPrice()+"')";
+			String sql = "insert into oop.cart (songid, title, album, artist) values ('"+c.getSongid()+"', '"+c.getTitle()+"', '"+c.getAlbum()+"', '"+c.getArtist()+"')";
 			connection = DBConnect.getConnection();
 			preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.executeUpdate();

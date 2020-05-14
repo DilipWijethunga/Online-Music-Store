@@ -9,6 +9,10 @@
 <body>
 
 
+
+			<p>${message}</p>
+
+
 	<table>
 		<tr>
 			<th>ItemID</th>
@@ -22,7 +26,8 @@
 	</tr>
 	
 	<tr>
-	
+			
+			
 	<form action="${pageContext.request.contextPath}/CartControllerServlet" method="post">
 	
 			<th><input type="text" name="itemid"></th>

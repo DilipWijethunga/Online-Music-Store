@@ -19,6 +19,9 @@ import com.oop.service.CartDAOImpl;
 public class CartControllerServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
+	RequestDispatcher dispatcher = null;
+	
+	
 	//ref variable for cart DAO
 	CartDAO cartDAO = null;
 	
@@ -31,39 +34,36 @@ public class CartControllerServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		
 		String action = request.getParameter("action");
+
 		
 		if(action == null) {
 			action ="LIST";
 		}
 			
 			
+		switch(action) {
+		
 			
-			switch(action) {
+			case "LIST": 
+				cartList(request, response);
+				break;
+				
 				
 			//getting the item from cart
-			case "EDIT": getCartItem(request, response);
-			break;
-			}
-		
-		
-		
-		
-		// call DAO method to get cart list
-		List<Cart> list = cartDAO.get();
-		
-		// add cart to request object
-		request.setAttribute("list", list);
-		
-		//request dispatcher
-		RequestDispatcher dispatcher = request.getRequestDispatcher("cart.jsp");
-		
-		//forward request and response 
-		dispatcher.forward(request, response);
+			case "EDIT": 
+				getCartItem(request, response);
+				break;
+				
+				
+				default:
+					cartList(request, response);
+					break;
+			}	
 		
 	}
 
+	
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
@@ -74,13 +74,24 @@ public class CartControllerServlet extends HttpServlet {
 		String artist = request.getParameter("artist");
 		String quantity = request.getParameter("quantity");
 		String price = request.getParameter("price");
-		System.out.println("blaaaaaaaaaaaaaaahhhhhhhhhhhhhh" + title);
 		
+		Cart c = new Cart();
+		c.setSongid(songid);
+		c.setAlbum(album);
+		c.setArtist(artist);
+		c.setTitle(title);
+		cartDAO.save(c);
 		
+		if(cartDAO.save(c)) {
+			request.setAttribute("message", "Success!");
+		}
 		
+		cartList(request, response);
 	}
 	
-		public void getCartItem(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	
+	
+	public void getCartItem(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			String id = request.getParameter("itemid");
 			Cart cart = cartDAO.get(Integer.parseInt(id));
 			request.setAttribute("cart", cart);
@@ -91,7 +102,32 @@ public class CartControllerServlet extends HttpServlet {
 			
 			//forward request and response 
 			dispatcher.forward(request, response);
+
 		}
 	
-
+		
+		
+	public void cartList(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+			// call DAO method to get cart list
+			List<Cart> list = cartDAO.get();
+			
+			// add cart to request object
+			request.setAttribute("list", list);
+			
+			//request dispatcher
+			dispatcher = request.getRequestDispatcher("cart.jsp");
+			
+			//forward request and response 
+			dispatcher.forward(request, response);
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 }

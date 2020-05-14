@@ -1,0 +1,1 @@
+<% response.sendRedirect("CartControllerServlet?action=LIST"); %>>
