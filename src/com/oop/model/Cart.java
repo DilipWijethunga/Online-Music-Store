@@ -33,6 +33,9 @@ public class Cart {
 		}
 		public int getQuantity() {
 			return quantity;
+			
+			
+			
 		}
 		public void setItemid(int itemid) {
 			this.itemid = itemid;

@@ -1,6 +1,7 @@
 package com.oop.service;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -15,7 +16,7 @@ public class CartDAOImpl implements CartDAO {
 	Connection connection = null;
 	Statement statement = null;
 	ResultSet resultSet  = null;
-	
+	PreparedStatement preparedStatement = null;
 	
 	@Override
 	public List<Cart> get() {
@@ -68,11 +69,7 @@ public class CartDAOImpl implements CartDAO {
 	}
 
 
-	@Override
-	public boolean save(Cart c) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+	
 
 
 	
@@ -106,6 +103,26 @@ public class CartDAOImpl implements CartDAO {
 		
 		return cart;
 		
+	}
+
+
+	//Insert data into cart table manually
+	@Override
+	public boolean save(Cart c) {
+		boolean flag = false;
+		
+		try {
+			String sql = "insert into oop.cart (songid, title, album, artist, price) values ('"+c.getSongid()+"', '"+c.getTitle()+"', '"+c.getAlbum()+"', '"+c.getArtist()+"', '"+c.getPrice()+"')";
+			connection = DBConnect.getConnection();
+			preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.executeUpdate();
+			flag = true;
+		}
+			
+		catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return flag;
 	}
 
 	
