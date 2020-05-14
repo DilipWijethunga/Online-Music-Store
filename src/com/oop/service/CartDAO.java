@@ -13,4 +13,6 @@ public interface CartDAO {
 	
 	
 	Cart get(int id);
+	
+	boolean update(Cart c);
 }

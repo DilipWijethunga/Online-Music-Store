@@ -56,6 +56,7 @@ public class CartDAOImpl implements CartDAO {
 				cart.setArtist(resultSet.getString("artist"));
 				cart.setQuantity(resultSet.getInt("quantity"));
 				
+				//add to list
 				list.add(cart);
 			}		
 		}
@@ -75,12 +76,12 @@ public class CartDAOImpl implements CartDAO {
 	
 	
 	@Override
-	public Cart get(int id) {
+	public Cart get(int itemid) {
 		Cart cart =null;
 
 		try {
 			cart = new Cart();
-			String sql = "select * from oop.cart where itemid='"+id+"'";
+			String sql = "select * from oop.cart where itemid="+itemid;
 			
 			connection = DBConnect.getConnection();
 			statement = connection.createStatement();
@@ -125,6 +126,32 @@ public class CartDAOImpl implements CartDAO {
 			e.printStackTrace();
 		}
 		return flag;
+	}
+
+
+
+
+
+
+
+	@Override
+	public boolean update(Cart c) {
+
+			boolean flag = false;
+			
+			try {
+				String sql = "update oop.cart set name='"+c.getQuantity()+"' where itemid="+c.getItemid();
+				connection = DBConnect.getConnection();
+				preparedStatement = connection.prepareStatement(sql);
+				preparedStatement.executeUpdate();
+				flag = true;
+			}
+			
+			
+			catch(SQLException e) {
+				e.printStackTrace();
+			}
+			return flag;
 	}
 
 	

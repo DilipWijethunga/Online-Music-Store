@@ -13,7 +13,7 @@
 			<p>${message}</p>
 
 			
-	<form action="${pageContext.request.contextPath}/CartControllerServlet" method="post">
+	<form action="${pageContext.request.contextPath}/cartcontroller" method="post">
 	
 			
 			SongID<input type="text" name="songid" value="${cart.songid}"/><br/>

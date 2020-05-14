@@ -55,6 +55,11 @@ public class CartControllerServlet extends HttpServlet {
 				getCartItem(request, response);
 				break;
 				
+			//delete item
+			case "DELETE": 
+				deleteItem(request, response);
+				break;
+				
 				
 			default:
 				cartList(request, response);
@@ -63,8 +68,10 @@ public class CartControllerServlet extends HttpServlet {
 		
 	}
 
-	
-	
+
+
+
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String itemid = request.getParameter("itemid");
@@ -76,7 +83,7 @@ public class CartControllerServlet extends HttpServlet {
 		String price = request.getParameter("price");
 		
 		Cart c = new Cart();
-		c.setItemid(Integer.parseInt(itemid));
+		
 		c.setSongid(songid);
 		c.setAlbum(album);
 		c.setArtist(artist);
@@ -84,8 +91,23 @@ public class CartControllerServlet extends HttpServlet {
 		c.setQuantity(Integer.parseInt(quantity));
 		c.setPrice(Double.parseDouble(price));
 		
-		if(cartDAO.save(c)) {
-			request.setAttribute("message", "Success!");
+		
+		if(itemid.isEmpty() || itemid == null) {
+			//save operation
+			if(cartDAO.save(c)) {
+				request.setAttribute("message", "Saved!");
+			}
+		}
+		
+		else{
+			//updating operation
+			c.setItemid(Integer.parseInt(itemid));
+			
+			if(cartDAO.update(c)) {
+				request.setAttribute("message", "Updated!");
+			}
+		
+		
 		}
 		
 		cartList(request, response);
@@ -116,7 +138,7 @@ public class CartControllerServlet extends HttpServlet {
 			
 			
 			//request dispatcher
-			RequestDispatcher dispatcher = request.getRequestDispatcher("addtocart.jsp");
+			dispatcher = request.getRequestDispatcher("addtocart.jsp");
 			
 			//forward request and response 
 			dispatcher.forward(request, response);
@@ -124,8 +146,12 @@ public class CartControllerServlet extends HttpServlet {
 		}
 		
 		
+	//delete items
+	private void deleteItem(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String id = request.getParameter("itemid");
+		System.out.print("sadsadadas" + id);
 		
-		
+	}
 		
 		
 		
