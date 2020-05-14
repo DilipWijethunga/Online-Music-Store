@@ -42,7 +42,6 @@
 	</servlet-mapping>
 	
 	
-	
 	<servlet>
 		<servlet-name>DisplayCart</servlet-name>
 		<servlet-class>com.oop.servlet.CartControllerServlet</servlet-class>

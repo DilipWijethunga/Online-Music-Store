@@ -8,7 +8,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<button onclick="window.location.href='addtocart.jsp'">Add to cart</button>
+
+	<button onclick="window.location.href='addtocart.jsp'"> Add item</button>
 	<table border="1">
 		<tr>
 			<th>ItemID</th>

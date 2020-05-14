@@ -34,7 +34,7 @@ public class CartDAOImpl implements CartDAO {
 			String sql = "Select * from oop.cart";
 			
 			//DB connection
-			connection = DBConnect.openConnection();
+			connection = DBConnect.getConnection();
 			
 			//create a statement
 			statement = connection.createStatement();
@@ -85,7 +85,7 @@ public class CartDAOImpl implements CartDAO {
 			cart = new Cart();
 			String sql = "select * from oop.cart where songid='"+id+"'";
 			
-			connection = DBConnect.openConnection();
+			connection = DBConnect.getConnection();
 			statement = connection.createStatement();
 			resultSet = statement.executeQuery(sql);
 			
