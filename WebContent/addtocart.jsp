@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<button onclick="window.location.href='addtocart.jsp'">Add to cart</button>
+	
 	<table border="1">
 		<tr>
 			<th>ItemID</th>
@@ -21,20 +21,21 @@
 			<th>action</th>
 		
 		</tr>
-			
-		<c:forEach items="${list}" var="cart">
-			
+
 			<tr>
-				<td>${cart.itemid}</td>
-				<td>${cart.songid}</td>
-				<td>${cart.title}</td>
-				<td>${cart.album}</td>
-				<td>${cart.artist}</td>
-				<td>${cart.quantity}</td>
-				<td>${cart.price}</td>
-				<td><a href="${pageContex.request.contexPath}/CartControllerServlet?action=EDIT&id=${cart.itemid}">Edit</a></td>
+			<form action="${pageContext.request.contextPath}/CartControllerServlet" method="post">
+				<td><input type="text" name="itemid"></td>
+				<td><input type="text" name="songid"></td>
+				<td><input type="text" name="title"></td>
+				<td><input type="text" name="album"></td>
+				<td><input type="text" name="artist"></td>
+				<td><input type="text" name="quantity"></td>
+				<td><input type="text" name="price"></td>
+				<td><button type="submit" >Add Item</button></td>
+			</form>
 			</tr>
-		</c:forEach>
+			
+		
 	
 	
 	</table>

@@ -2,6 +2,7 @@ package com.oop.service;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +34,7 @@ public class CartDAOImpl implements CartDAO {
 			String sql = "Select * from oop.cart";
 			
 			//DB connection
-			connection = DBConnect.getConnection();
+			connection = DBConnect.openConnection();
 			
 			//create a statement
 			statement = connection.createStatement();
@@ -64,6 +65,47 @@ public class CartDAOImpl implements CartDAO {
 		}
 		
 		return list;
+	}
+
+
+	@Override
+	public boolean save(Cart c) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+	
+	
+	@Override
+	public Cart get(int id) {
+		Cart cart =null;
+
+		try {
+			cart = new Cart();
+			String sql = "select * from oop.cart where songid='"+id+"'";
+			
+			connection = DBConnect.openConnection();
+			statement = connection.createStatement();
+			resultSet = statement.executeQuery(sql);
+			
+			while(resultSet.next()) {
+				cart.setSongid(resultSet.getString("itemid"));
+				cart.setTitle(resultSet.getString("title")); 
+				cart.setPrice(resultSet.getDouble("price"));
+				cart.setAlbum(resultSet.getString("album"));
+				cart.setArtist(resultSet.getString("artist"));
+				cart.setQuantity(resultSet.getInt("quantity"));
+			}
+		}
+		
+		
+		catch(SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return cart;
+		
 	}
 
 	

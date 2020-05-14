@@ -8,4 +8,9 @@ import com.oop.model.Cart;
 public interface CartDAO {
 	
 	List<Cart> get();
+	
+	boolean save(Cart c);
+	
+	
+	Cart get(int id);
 }

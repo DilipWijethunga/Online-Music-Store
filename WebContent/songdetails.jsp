@@ -126,7 +126,7 @@
                         <tbody>
                         
                             <tr>
-                            <form action="insertcart" method="post">
+                            <form action="insertcart" method="POST">
                             
                                 <td class="sdetails"><input type="text" value="${song.songid}" READONLY size="1" name="songid"></td>
                                 <td class="sdetails"><input type="text" value="${song.title}" READONLY size="10" name="title"></td>

@@ -27,28 +27,25 @@ public class CartControllerServlet extends HttpServlet {
 		cartDAO = new CartDAOImpl();
 	}
 	
-	
-	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		// call DAO method to get cart list
-		List<Cart> list = cartDAO.get();
-		
-		// add cart to request object
-		request.setAttribute("list", list);
-		
-		//request dispatcher
-		RequestDispatcher dispatcher = request.getRequestDispatcher("cart.jsp");
-		
-		//forward request and response 
-		dispatcher.forward(request, response);
-		
-	}
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		
 	}
+	
+		public void getCartItem(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+			String id = request.getParameter("itemid");
+			Cart cart = cartDAO.get(Integer.parseInt(id));
+			request.setAttribute("cart", cart);
+			
+			
+			//request dispatcher
+			RequestDispatcher dispatcher = request.getRequestDispatcher("cart.jsp");
+			
+			//forward request and response 
+			dispatcher.forward(request, response);
+		}
+	
+		
 
 }

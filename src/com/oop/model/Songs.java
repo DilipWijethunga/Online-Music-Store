@@ -38,6 +38,42 @@ public class Songs {
 		return artist;
 	}
 
+
+	public void setSongid(String songid2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	public void setTitle(String title2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	public void setPrice(String price2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	public void setAlbum(String album2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	public void setArtist(String artist2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	public void setQuantity(String qty) {
+		// TODO Auto-generated method stub
+		
+	}
+
 	
 	
 	

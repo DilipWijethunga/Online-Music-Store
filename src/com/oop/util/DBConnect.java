@@ -12,7 +12,7 @@ public class DBConnect {
 			private static final  String password = "1234";
 			private static  Connection connection = null;
 			
-			public static Connection getConnection() {
+			public static Connection openConnection() {
 				
 				//checking connection
 				if(connection != null) {
