@@ -49,7 +49,7 @@
                     	</form>
                     	
                     	<form action="#" method="post">
-                    	<td><input type="image" class="avatar" src="images/cart.svg"></td>
+                    	<td><input type="image" class="avatar" src="images/cart.svg" onclick="window.location.href='showcart.jsp'"></td>
                     	</form>
                     	
                     	<form action="#" method="post">

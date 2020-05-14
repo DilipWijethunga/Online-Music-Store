@@ -106,7 +106,9 @@ public class CartControllerServlet extends HttpServlet {
 			if(cartDAO.update(c)) {
 				request.setAttribute("message", "Updated!");
 			}
-		
+			
+			dispatcher = request.getRequestDispatcher("addtocart.jsp");
+			dispatcher.forward(request, response);
 		
 		}
 		

@@ -133,7 +133,7 @@ public class CartDAOImpl implements CartDAO {
 
 
 
-
+	//cart updating
 	@Override
 	public boolean update(Cart c) {
 
