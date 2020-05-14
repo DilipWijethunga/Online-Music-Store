@@ -80,7 +80,7 @@ public class CartDAOImpl implements CartDAO {
 
 		try {
 			cart = new Cart();
-			String sql = "select * from oop.cart where songid='"+id+"'";
+			String sql = "select * from oop.cart where itemid='"+id+"'";
 			
 			connection = DBConnect.getConnection();
 			statement = connection.createStatement();
@@ -100,6 +100,8 @@ public class CartDAOImpl implements CartDAO {
 		catch(SQLException e) {
 			e.printStackTrace();
 		}
+		
+		System.out.print(cart.getSongid() + cart.getTitle() + cart.getPrice() + cart.getAlbum() + cart.getArtist() + cart.getQuantity());
 		
 		return cart;
 		

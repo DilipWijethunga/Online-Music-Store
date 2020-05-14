@@ -12,37 +12,23 @@
 
 			<p>${message}</p>
 
-
-	<table>
-		<tr>
-			<th>ItemID</th>
-			<th>SongID</th>
-			<th>Title</th>
-			<th>Album</th>
-			<th>Artist</th>
-			<th>Quantity</th>
-			<th>Price</th>
-			<th>action</th>
-	</tr>
-	
-	<tr>
-			
 			
 	<form action="${pageContext.request.contextPath}/CartControllerServlet" method="post">
 	
-			<th><input type="text" name="itemid"></th>
-			<th><input type="text" name="songid"></th>
-			<th><input type="text" name="title"></th>
-			<th><input type="text" name="album"></th>
-			<th><input type="text" name="artist"></th>
-			<th><input type="text" name="quantity"></th>
-			<th><input type="text" name="price"></th>
-			<th><button type="submit">Save Item</button></th>
+			
+			SongID<input type="text" name="songid" value="${cart.songid}"/><br/>
+			Title<input type="text" name="title" value="${cart.title}"/><br/>
+			Album<input type="text" name="album" value="${cart.album}"/><br/>
+			Artist<input type="text" name="artist" value="${cart.artist}"/><br/>
+			Quantity<input type="text" name="quantity" value="${cart.quantity}"/><br/>
+			Price<input type="text" name="price" value="${cart.price}"/><br/>
+			<input type="hidden" name="itemid" value="${cart.itemid}"/>
+			<button type="submit">Save Item</button></th>
 	</form>
 		
-	</tr>
+	
 
-	</table>
+	
 	
 </body>
 </html>

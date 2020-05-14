@@ -56,9 +56,9 @@ public class CartControllerServlet extends HttpServlet {
 				break;
 				
 				
-				default:
-					cartList(request, response);
-					break;
+			default:
+				cartList(request, response);
+				break;
 			}	
 		
 	}
@@ -76,11 +76,13 @@ public class CartControllerServlet extends HttpServlet {
 		String price = request.getParameter("price");
 		
 		Cart c = new Cart();
+		c.setItemid(Integer.parseInt(itemid));
 		c.setSongid(songid);
 		c.setAlbum(album);
 		c.setArtist(artist);
 		c.setTitle(title);
-		cartDAO.save(c);
+		c.setQuantity(Integer.parseInt(quantity));
+		c.setPrice(Double.parseDouble(price));
 		
 		if(cartDAO.save(c)) {
 			request.setAttribute("message", "Success!");
@@ -89,24 +91,8 @@ public class CartControllerServlet extends HttpServlet {
 		cartList(request, response);
 	}
 	
-	
-	
-	public void getCartItem(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-			String id = request.getParameter("itemid");
-			Cart cart = cartDAO.get(Integer.parseInt(id));
-			request.setAttribute("cart", cart);
-			
-			
-			//request dispatcher
-			RequestDispatcher dispatcher = request.getRequestDispatcher("cart.jsp");
-			
-			//forward request and response 
-			dispatcher.forward(request, response);
-
-		}
-	
 		
-		
+		//cart
 	public void cartList(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			// call DAO method to get cart list
 			List<Cart> list = cartDAO.get();
@@ -122,7 +108,20 @@ public class CartControllerServlet extends HttpServlet {
 		}
 		
 		
-		
+	//add items manually
+	public void getCartItem(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+			String id = request.getParameter("itemid");
+			Cart cart = cartDAO.get(Integer.parseInt(id));
+			request.setAttribute("cart", cart);
+			
+			
+			//request dispatcher
+			RequestDispatcher dispatcher = request.getRequestDispatcher("addtocart.jsp");
+			
+			//forward request and response 
+			dispatcher.forward(request, response);
+
+		}
 		
 		
 		
