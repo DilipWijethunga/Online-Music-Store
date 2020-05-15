@@ -108,7 +108,7 @@
                 <p>${message}</p>
                 
                
-                    <h1 class="title">Cart</h1>
+                    <h1 class="title">Edit Cart</h1>
 
                     <table class="songdetails">
                         <thead>

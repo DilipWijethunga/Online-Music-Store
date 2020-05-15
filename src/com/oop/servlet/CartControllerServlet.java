@@ -84,6 +84,7 @@ public class CartControllerServlet extends HttpServlet {
 		
 		Cart c = new Cart();
 		
+		c.setItemid(Integer.parseInt(itemid));
 		c.setSongid(songid);
 		c.setAlbum(album);
 		c.setArtist(artist);
@@ -92,6 +93,11 @@ public class CartControllerServlet extends HttpServlet {
 		c.setPrice(Double.parseDouble(price));
 		
 		
+		if(cartDAO.update(c)) {
+			request.setAttribute("message", "Updated!");
+		}
+		
+		/**
 		if(itemid.isEmpty() || itemid == null) {
 			//save operation
 			if(cartDAO.save(c)) {
@@ -110,7 +116,7 @@ public class CartControllerServlet extends HttpServlet {
 			dispatcher = request.getRequestDispatcher("addtocart.jsp");
 			dispatcher.forward(request, response);
 		
-		}
+		}**/
 		
 		cartList(request, response);
 	}
